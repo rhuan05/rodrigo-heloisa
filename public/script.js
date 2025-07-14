@@ -1,6 +1,11 @@
+if (window.innerWidth <= 480)
+    sizeImage = 80
+else 
+    sizeImage = 60
+
 let scrollElement = document.querySelector('.scroll');
 let countImages = document.querySelectorAll('.scroll img').length;
-let maxWithScroll = countImages * 60;
+let maxWithScroll = countImages * sizeImage;
 let marginLeftScroll = 0;
 
 // Criando HTML dinâmicamente para as seleções
@@ -27,7 +32,7 @@ document.querySelectorAll('.selection').forEach(selection => {
 });
 
 function UpdateScroll(scrollElement, selectionClick) {
-    scrollElement.style.marginLeft = `-${60*selectionClick.id}vw`;
+    scrollElement.style.marginLeft = `-${sizeImage*selectionClick.id}vw`;
 }
 
 function CleanSelection(selectionClick) {
