@@ -1,0 +1,302 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--principal-font)
+}
+
+.with__background {
+    background: var(--love-color);
+    color: white;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 0px 5px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --love-color: #C3415F;
+    --principal-color: #B3002B;
+    --principal-font: 'Inter', sans-serif;
+    --background-color: #38000D;
+}
+
+body {
+    overflow-x: hidden;
+    background: var(--background-color);
+}
+
+.initializer {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.initializer a {
+    text-decoration: none;
+    background-color: var(--love-color);
+    color: white;
+    font-size: 1.5rem;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 80px;
+    cursor: pointer;
+    margin-top: -80px;
+    font-weight: 600;
+    box-shadow: 0px 0px 5px 5px var(--love-color);
+    transition: .2s;
+}
+
+.initializer button:hover {
+    padding: 18px 33px;
+    font-size: 1.6em;
+}
+
+/* Core */
+
+.core .header {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.core .header .container__scroll {
+    width: 60vw;
+    height: 70vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border-radius: 10px;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 0px 0px 5px 10px var(--principal-color);
+}
+
+.core .header .container__scroll .scroll {
+    height: 100%;
+    display: flex;
+    transition: .2s;
+}
+
+.core .header .container__scroll .scroll img {
+    width: 60vw;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.core .header .scroll__selection {
+    margin-top: 20px;
+    display: flex;
+    gap: 3px;
+}
+
+.core .header .scroll__selection .selection {
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.core .header .scroll__selection .selectioned {
+    width: 25px;
+}
+
+.core main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.core main .principal_texts {
+    text-align: center;
+    color: white;
+    font-size: 600;
+}
+
+.core main .principal_texts h1 {
+    text-align: center;
+    color: white;
+    border-bottom: 2px solid var(--principal-color);
+    width: 20vw;
+    margin: auto;
+    font-size: 2.5em;
+    font-size: 700;
+}
+
+.core main .principal_texts .container__counter {
+    border-radius: 10px;
+    padding: 10px;
+    width: 60vw;
+    margin: auto;
+    margin-top: 60px;
+    border: 2px solid var(--principal-color);
+    font-size: 1.5em;
+    font-size: 700;
+}
+
+.core main .principal_texts .romantic__paragrath {
+    margin: auto;
+    margin-top: 60px;
+    text-align: left;
+    width: 70vw;
+    font-size: 1.5em;
+    font-size: 700;
+}
+
+/* Footer */
+
+.core footer {
+    width: 70vw;
+    height: 10vh;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    color: white;
+    margin: auto;
+    margin-top: 20vh;
+    margin-bottom: 100px;
+}
+
+.core footer h3 {
+    text-align: left;
+    font-size: 3em;
+}
+
+.core footer .name__actor {
+    display: inline-block;
+    border-bottom: 2px solid var(--love-color);
+}
+
+@media (max-width: 1115px) {
+    .core main {
+        margin-top: 10vh;
+    }
+
+    .core main .principal_texts h1 {
+        width: 25vw;
+    }
+
+    .core footer {
+        margin-top: 30vh;
+    }
+}
+
+@media (max-width: 890px) {
+    .core main {
+        margin-top: 15vh;
+    }
+
+    .core main .principal_texts h1 {
+        width: 35vw;
+    }
+
+    .core footer {
+        margin-top: 30vh;
+    }
+}
+
+@media (max-width: 765px) {
+    .core main {
+        margin-top: 20vh;
+    }
+
+    .core main .principal_texts h1 {
+        width: 38vw;
+    }
+
+    .core footer {
+        margin-top: 35vh;
+    }
+}
+
+@media (max-width: 705px) {
+
+    .core main .principal_texts h1 {
+        width: 40vw;
+    }
+}
+
+@media (max-width: 670px) {
+    .core main {
+        margin-top: 24vh;
+    }
+
+    .core main .principal_texts h1 {
+        width: 46vw;
+    }
+
+    .core footer {
+        margin-top: 38vh;
+    }
+}
+
+@media (max-width: 585px) {
+    .core main {
+        margin-top: 40vh;
+    }
+
+    .core main .principal_texts h1 {
+        width: 60vw;
+    }
+
+    .core footer {
+        margin-top: 60vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .core main {
+        margin-top: 50vh;
+    }
+
+    .core main .principal_texts h1 {
+        width: 70vw;
+    }
+
+    .core footer {
+        margin-top: 70vh;
+        font-size: .8em;
+    }
+}
+
+@media (max-width: 400px) {
+    .core main {
+        margin-top: 86vh;
+    }
+
+    .core main .principal_texts h1 {
+        width: 70vw;
+        font-size: 2em;
+    }
+
+    .core footer {
+        margin-top: 90vh;
+        font-size: .5em;
+    }
+}
+
+@media (max-width: 315px) {
+    .core main {
+        margin-top: 100vh;
+    }
+
+    .core main .principal_texts h1 {
+        width: 66vw;
+        font-size: 1.5em;
+    }
+
+    .core footer {
+        margin-top: 110vh;
+        font-size: .5em;
+    }
+}
