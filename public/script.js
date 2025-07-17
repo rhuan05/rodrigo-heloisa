@@ -1,7 +1,9 @@
-if (window.innerWidth <= 480)
+if (window.innerWidth >= 1115)
+    sizeImage = 30;
+else if (window.innerWidth >= 585)
+    sizeImage = 40;
+else
     sizeImage = 80
-else 
-    sizeImage = 60
 
 let scrollElement = document.querySelector('.scroll');
 let countImages = document.querySelectorAll('.scroll img').length;
@@ -45,17 +47,19 @@ function CleanSelection(selectionClick) {
 }
 
 // Contador de dias à partir do dia 17 de maio de 2025
-let startDate = new Date('2025-05-17');
+let startDate = new Date('2025-05-17T24:00:00');
 
 function updateCounter() {
     let currentDate = new Date();
     let timeDiff = currentDate.getTime() - startDate.getTime();
+
+    console.log(currentDate)
     
     let totalSeconds = Math.floor(timeDiff / 1000);
     let totalMinutes = Math.floor(totalSeconds / 60);
     let totalHours = Math.floor(totalMinutes / 60);
     let totalDays = Math.floor(totalHours / 24);
-    let totalMonths = Math.floor(totalDays / 30.44);
+    let totalMonths = Math.floor(totalDays / 30);
     
     let days = totalDays % 30;
     let hours = totalHours % 24;
@@ -70,6 +74,7 @@ function updateCounter() {
         e ${seconds} ${seconds === 1 ? 'segundo' : 'segundos'}.
     `;
 }
+
 
 updateCounter();
 
@@ -91,4 +96,4 @@ function DoScroll() {
 
 DoScroll();
 
-setInterval(DoScroll, 5000)
+setInterval(DoScroll, 5000);

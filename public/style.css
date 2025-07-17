@@ -66,8 +66,8 @@ body {
 }
 
 .core .header .container__scroll {
-    width: 60vw;
-    height: 70vh;
+    width: 30vw;
+    height: 80vh;
     display: flex;
     justify-content: left;
     align-items: center;
@@ -84,7 +84,7 @@ body {
 }
 
 .core .header .container__scroll .scroll img {
-    width: 60vw;
+    width: 30vw;
     height: 100%;
     border-radius: 10px;
     object-fit: cover;
@@ -190,6 +190,14 @@ body {
     .core footer {
         margin-top: 30vh;
     }
+
+    .core .header .container__scroll {
+        width: 40vw;
+    }
+    
+    .core .header .container__scroll .scroll img {
+        width: 40vw;
+    }
 }
 
 @media (max-width: 890px) {
@@ -252,6 +260,14 @@ body {
 
     .core footer {
         margin-top: 60vh;
+    }
+
+    .core .header .container__scroll {
+        width: 80vw;
+    }
+
+    .core .header .container__scroll .scroll img {
+        width: 80vw;
     }
 }
 
