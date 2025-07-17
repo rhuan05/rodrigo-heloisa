@@ -115,6 +115,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 20vh;
 }
 
 .core main .principal_texts {
@@ -179,7 +180,7 @@ body {
 
 @media (max-width: 1115px) {
     .core main {
-        margin-top: 10vh;
+        margin-top: 30vh;
     }
 
     .core main .principal_texts h1 {
@@ -193,7 +194,7 @@ body {
 
 @media (max-width: 890px) {
     .core main {
-        margin-top: 15vh;
+        margin-top: 35vh;
     }
 
     .core main .principal_texts h1 {
@@ -207,7 +208,7 @@ body {
 
 @media (max-width: 765px) {
     .core main {
-        margin-top: 20vh;
+        margin-top: 40vh;
     }
 
     .core main .principal_texts h1 {
@@ -228,7 +229,7 @@ body {
 
 @media (max-width: 670px) {
     .core main {
-        margin-top: 24vh;
+        margin-top: 50vh;
     }
 
     .core main .principal_texts h1 {
@@ -242,7 +243,7 @@ body {
 
 @media (max-width: 585px) {
     .core main {
-        margin-top: 40vh;
+        margin-top: 60vh;
     }
 
     .core main .principal_texts h1 {
@@ -274,7 +275,7 @@ body {
     }
 
     .core main {
-        margin-top: 50vh;
+        margin-top: 80vh;
     }
 
     .core main .principal_texts h1 {
@@ -289,7 +290,7 @@ body {
 
 @media (max-width: 400px) {
     .core main {
-        margin-top: 86vh;
+        margin-top: 100vh;
     }
 
     .core main .principal_texts h1 {
@@ -303,9 +304,9 @@ body {
     }
 }
 
-@media (max-width: 315px) {
+@media (max-width: 350px) {
     .core main {
-        margin-top: 100vh;
+        margin-top: 110vh;
     }
 
     .core main .principal_texts h1 {
@@ -316,5 +317,11 @@ body {
     .core footer {
         margin-top: 110vh;
         font-size: .5em;
+    }
+}
+
+@media (max-width: 300px) {
+    .core main {
+        margin-top: 140vh;
     }
 }
